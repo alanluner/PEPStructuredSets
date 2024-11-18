@@ -20,7 +20,7 @@ This code can be used to further experiment with performance estimation over smo
 
 ## BnB-PEP
 
-A portion of this code is adapted from the branch-and-bound performance estimation solver of Shuvomoy Das Gupta, Bart P.G. Van Parys, Ernest K. Ryu. Their code is available [here](https://github.com/Shuvomoy/BnB-PEP-code), corresponding to the paper
+A portion of this code is adapted from the branch-and-bound performance estimation solver of Shuvomoy Das Gupta, Bart P.G. Van Parys, and Ernest K. Ryu. Their code is available [here](https://github.com/Shuvomoy/BnB-PEP-code), corresponding to the paper
 > [Shuvomoy Das Gupta, Bart P.G. Van Parys, Ernest K. Ryu, "Branch-and-Bound Performance Estimation Programming: A Unified Methodology for Constructing Optimal Optimization Methods", Mathematical Programming 204.1 (2024): 567-639.](https://link.springer.com/article/10.1007/s10107-023-01973-1)
 
 Please consider citing their paper as well if you use our code:
@@ -39,4 +39,4 @@ Please consider citing their paper as well if you use our code:
 
 
 ## Contact
-If you run into any issues with the code or are interested in the topics of the paper, feel free to send an email :email: to [aluner1@jhu.edu](mailto:aluner1@jhu.edu)
+If you run into any issues with the code or are interested in the topics of the paper, feel free to email [aluner1@jhu.edu](mailto:aluner1@jhu.edu).
