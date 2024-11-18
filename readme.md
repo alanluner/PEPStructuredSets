@@ -14,7 +14,7 @@ This code can be used to further experiment with performance estimation over smo
       eprint={2410.14811},
       archivePrefix={arXiv},
       primaryClass={math.OC},
-      url={https://arxiv.org/abs/2410.14811},
+      url={https://arxiv.org/abs/2410.14811}
 }
 ```
 
