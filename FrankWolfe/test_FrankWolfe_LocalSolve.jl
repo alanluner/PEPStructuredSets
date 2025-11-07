@@ -23,10 +23,4 @@ param = :N
 paramVals = 1:NMax
 
 # Solve PEP for N = 1,...,NMax
-# data, _, isFinalIterateBestData = collectData(param, paramVals, 0, D, L, μ, α, β, δ, ℓ, functionType, setType, optLoc, SCDiam)
-
-h = OffsetArray([1,0.5,0.4,0.3,0.2],0:N-1)
-objectiveType = :minIterate
-blah = solveFWLocal(N, D, L, μ, α, β, δ, h, functionType, setType, objectiveType, optLoc, SCDiam)
-
-# print("\n\n",data)
+data, _, isFinalIterateBestData = collectData(param, paramVals, 0, D, L, μ, α, β, δ, ℓ, functionType, setType, optLoc, SCDiam)
