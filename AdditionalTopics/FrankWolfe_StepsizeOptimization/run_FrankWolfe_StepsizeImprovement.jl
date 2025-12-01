@@ -1,5 +1,5 @@
-include("FW_Main.jl")
-include("FW_DataCollection.jl")
+include("../../FrankWolfe/FW_Main.jl")
+include("../../FrankWolfe/FW_DataCollection.jl")
 include("FW_SmoothStepsizeImprovement.jl")
 include("FW_ConvexStepsizeOptimization.jl")
 

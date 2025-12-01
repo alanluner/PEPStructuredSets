@@ -18,6 +18,24 @@ This code can be used to further experiment with performance estimation over smo
 }
 ```
 
+The code is organized into according to its different application sections: Separating Hyperplane Methods (Section 4), Frank-Wolfe Method (Section 5), and Epismooth Minimization (Section 6). We also include in Additional Topics, applications to Alternating Projections and stepsize optimization for Frank-Wolfe. These additional topics are not discussed in the corresponding paper but can be explored using similar PEP ideas.
+
+We list below the executable scripts for reproducing results in our paper:
+- SeparatingHyperplanes
+  - run_SeparatingHyperplane_StoppingProblem: Find solution N_max to feasibility stopping problem as delta (or R) varies, with different values of beta (See Fig. 5)
+- FrankWolfe
+  - run_FrankWolfe_GlobalSolve: Finds global solution (up to specified tolerance) to Frank-Wolfe PEP (See individual points in Fig. 7)
+  - run_FrankWolfe_LocalSolve: Finds local solution to Frank-Wolfe PEP (See curves in Fig. 7)
+  - run_FrankWolfe_SurveyOfAllSettings: Finds local solutions to Frank-Wolfe PEP across variety of problem settings (See Fig. 6)
+- EpiSmoothMinimization
+  - run_EpiSmooth_Minimization: Solve p_ES(L, eta R) with fixed N as eta decreases, considering the gradient methods GD with h=1, GD with silver stepsizes, and Nesterov acceleration (See Fig. 9)
+
+And some additional executable scripts for further explorations:
+- AdditionalTopics/AlternatingProjections
+  - run_AlternatingProjections_ConvexSets: Find global solution to alternating projections PEP for convex sets and delta-interior point, and compare numerical result with conjectured rate
+- AdditionalTopics/FrankWolfe_StepsizeOptimization
+  - run_FrankWolfe_StepsizeImprovement: Given fixed N, computes locally optimal stepsizes for Frank-Wolfe over smooth or convex sets. For smooth sets, stepsize optimization must use a convex relaxation of the original PEP, so resulting stepsizes offer no guarantee of improvement (but tend to be beneficial experimentally).
+
 ## BnB-PEP (Das Gupta, Van Parys, Ryu)
 
 A portion of this code is adapted from the branch-and-bound performance estimation solver of Shuvomoy Das Gupta, Bart P.G. Van Parys, and Ernest K. Ryu. Their code is available [here](https://github.com/Shuvomoy/BnB-PEP-code), corresponding to the paper

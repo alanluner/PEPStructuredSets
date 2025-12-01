@@ -14,11 +14,8 @@ for (i,β) in enumerate(betaVals)
     setType = :smooth
 
     for (j,δ) in enumerate(deltaVals)
-        # if mod(j,10) == 0
-        #     print(j)
-        # end
         h = max(δ,1/β)
-        NMaxGuess = Int(floor((R+h-δ)^2/h^2)) # Apply guess based on Theorem 4.1
+        NMaxGuess = Int(floor((R+h-δ)^2/h^2)) # Apply guess based on Theorem 6
         data[i,j] = solve_SH_HaltingProblem_WithGuess(R, α, β, δ, setType, NMaxGuess)
     end
 end

@@ -1,4 +1,5 @@
-include("FW_Main.jl")
+include("../../FrankWolfe/FW_Main.jl")
+include("code_to_compute_pivoted_cholesky.jl")
 
 
 #####-----------------------------#####

@@ -20,7 +20,7 @@ paramVals = 1:NMax
 
 # Run across all settings 
 surveyData = Dict()
-for optLoc in [:interior, :exterior, :inSet]
+for optLoc in [:interior, :exterior]
     for functionType in [:smooth, :smoothSC]
         for setType in [:convex, :smooth, :SC, :smoothSC]
 

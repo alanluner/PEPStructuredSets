@@ -314,7 +314,7 @@ function applyAPConstraints_SC(model, N, R, α, δ, G, 𝐱, 𝐳, 𝐮, 𝐯, �
 
 end
 
-# Apply cuts to solve SDP over convex subregion (Section 5.4.3 of paper)
+# Apply cuts to solve SDP over convex subregion
 function applyCuts_AP(model, divU, divV, G, N, 𝐮, 𝐯, 𝐦, 𝐧)
     I = -1:N-1
     K = vcat(-1, 1:N)
@@ -375,7 +375,7 @@ function forceToCurve_AP(model, G, N, uSqVals, vSqVals, 𝐮, 𝐯, 𝐦, 𝐧)
     end
 end
 
-# Approximate solution for convex sets, based on conjecture 6.2 of exact rate
+# Approximate solution for convex sets, based on conjecture of exact rate
 function getAPLowerBound(N,R,δ)
 
     ff(c) = -(c[1]^(2*N-1)*sqrt(R^2-δ^2) - δ*c[1]^(2*N)/sqrt(1 - c[1]^2) - δ*c[1]^(2*N-1)/sqrt(1 - c[1]^2))

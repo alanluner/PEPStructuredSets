@@ -176,7 +176,7 @@ function solve_primal_FW_Convex(N, h, D, L, μ; optLoc = :exterior, functionType
     return solve_primal_FW_General(N, h, D, L, μ, 0, 0, 0, mode; functionType = functionType, setType = setType, optLoc = optLoc, objectiveType = objectiveType, modelOnly = modelOnly)
 end
     
-# Apply cuts to solve SDP over convex subregion (Section 5.4.3 of paper)
+# Apply cuts to solve SDP over convex subregion
 function applyCuts(model, divVals, G, N, 𝐠, 𝐧)
     for i=-1:N-1
         div1 = divVals[i,1]
